@@ -1,6 +1,6 @@
-export const CONFIG = {
+const CONFIG = {
     APP_NAME: "MultiPlatform Hub",
-    ADMIN_PASSWORD: "1234",           // Change this later for security
+    ADMIN_PASSWORD: "1234",
     DEFAULT_THEME: "theme-blue",
     STORAGE_KEYS: {
         THEME: "mp_theme",
