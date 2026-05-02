@@ -1,17 +1,7 @@
-import { State } from './core/state.js';
-import { Router } from './core/router.js';
-import { Auth } from './core/auth.js';
-import { $, \] } from './core/utils.js';
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Core Systems
     State.init();
     Router.init();
-
-    // Sidebar Controls
     setupSidebars();
-
-    // Admin Login
     setupAdmin();
 });
 
@@ -54,7 +44,6 @@ function setupAdmin() {
             alert("✅ Admin Access Granted!");
             modal.classList.add('hidden');
             passwordInput.value = '';
-            // TODO: Open Admin Dashboard later
         } else {
             alert("❌ Incorrect Password");
         }
