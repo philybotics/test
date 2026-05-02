@@ -1,0 +1,46 @@
+/* Theme System */
+:root {
+    --primary: #0066ff;
+    --primary-dark: #0052cc;
+    --bg: #f8f9fa;
+    --surface: #ffffff;
+    --text: #333333;
+    --text-light: #666666;
+    --border: #e0e0e0;
+}
+
+/* Blue & White (Default) */
+.theme-blue { --primary: #0066ff; --primary-dark: #0052cc; }
+
+/* Green & White */
+.theme-green { --primary: #00b36b; --primary-dark: #00995c; }
+
+/* Grey & White */
+.theme-grey { --primary: #555555; --primary-dark: #333333; }
+
+/* Black & White */
+.theme-black {
+    --primary: #000000;
+    --primary-dark: #222222;
+    --bg: #f0f0f0;
+    --surface: #ffffff;
+}
+
+/* Dark Mode Support */
+.dark-mode {
+    --bg: #1a1a1a;
+    --surface: #2d2d2d;
+    --text: #eeeeee;
+    --text-light: #bbbbbb;
+    --border: #444444;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.top-nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
