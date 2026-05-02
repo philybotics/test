@@ -1,21 +1,19 @@
-import { CONFIG } from './config.js';
+const Auth = {
+    isAdminLoggedIn: false,
 
-export class Auth {
-    static isAdminLoggedIn = false;
-
-    static login(password) {
+    login(password) {
         if (password === CONFIG.ADMIN_PASSWORD) {
             this.isAdminLoggedIn = true;
             return true;
         }
         return false;
-    }
+    },
 
-    static logout() {
+    logout() {
         this.isAdminLoggedIn = false;
-    }
+    },
 
-    static isLoggedIn() {
+    isLoggedIn() {
         return this.isAdminLoggedIn;
     }
-}
+};
